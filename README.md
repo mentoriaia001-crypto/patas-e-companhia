@@ -6,6 +6,12 @@ front-end. É um site estático, sem build e sem dependências: basta abrir o HT
 > ⚠️ **Aviso:** "Patas & Companhia" é uma empresa fictícia. Nomes, endereços, telefones,
 > e-mails, preços e avaliações são inventados e servem apenas para fins de estudo e demonstração.
 
+## 🌐 Site publicado
+
+O GitHub Pages publica este repositório automaticamente a cada push na branch `main`:
+
+**https://mentoriaia001-crypto.github.io/patas-e-companhia/**
+
 ## 📁 Estrutura
 
 ```
