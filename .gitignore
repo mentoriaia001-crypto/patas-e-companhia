@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (caso o projeto evolua para build)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Logs e temporários
+*.log
+tmp/
+.cache/

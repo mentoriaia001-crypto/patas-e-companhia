@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Patas &amp; Companhia — pet shop com banho e tosa, veterinário, hospedagem e os melhores produtos para o seu melhor amigo." />
+  <title>Patas &amp; Companhia | Pet Shop e Clínica Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===================== CABEÇALHO / NAVEGAÇÃO ===================== -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="Patas e Companhia — início">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span class="brand-text">
+          <strong>Patas &amp; Companhia</strong>
+          <small>Pet Shop &amp; Clínica</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menuPrincipal">
+        <span class="sr-only">Abrir menu de navegação</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="menuPrincipal" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-button" id="cartButton" type="button">
+            <span aria-hidden="true">🛒</span>
+            <span class="cart-label">Carrinho</span>
+            <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+          </button>
+          <a class="btn btn-primary btn-sm" href="#contato">Agendar banho</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===================== APRESENTAÇÃO / HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Cuidado de verdade, todos os dias</p>
+          <h1>Seu melhor amigo merece um <span class="highlight">banho de carinho</span></h1>
+          <p class="lead">
+            Banho e tosa, consultas veterinárias, hospedagem e uma loja completa com tudo o que
+            cães e gatos precisam. Aqui, cada patinha é tratada como família.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contato">Agendar atendimento</a>
+            <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+          </div>
+          <ul class="hero-stats" role="list">
+            <li>
+              <strong>+12 anos</strong>
+              <span>cuidando de pets</span>
+            </li>
+            <li>
+              <strong>4.9/5</strong>
+              <span>avaliação dos tutores</span>
+            </li>
+            <li>
+              <strong>+3.500</strong>
+              <span>banhos por ano</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-card reveal" aria-hidden="true">
+          <div class="hero-card-top">
+            <span class="pill">Hoje aberto até 20h</span>
+            <span class="hero-emoji">🐶</span>
+          </div>
+          <h2>Banho &amp; Tosa Completo</h2>
+          <p>Hidratação, corte de unhas, limpeza de ouvido e perfume pet.</p>
+          <div class="hero-card-footer">
+            <span class="price">a partir de R$ 69,00</span>
+            <span class="badge">Vagas hoje</span>
+          </div>
+          <div class="hero-paws">🐾 🐾 🐾</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Nossos serviços</p>
+          <h2>Tudo o que o seu pet precisa em um só lugar</h2>
+          <p class="section-sub">
+            Equipe treinada, produtos hipoalergênicos e ambiente monitorado para que o seu
+            companheiro se sinta em casa.
+          </p>
+        </header>
+
+        <div class="grid services-grid" id="servicesGrid"><!-- preenchido por app.js --></div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUTOS ===================== -->
+    <section class="section section-alt" id="produtos">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Loja Patas &amp; Companhia</p>
+          <h2>Três favoritos da nossa prateleira</h2>
+          <p class="section-sub">
+            Selecionamos rações, brinquedos e acessórios aprovados pelos nossos veterinários.
+          </p>
+        </header>
+
+        <div class="grid products-grid" id="productsGrid"><!-- preenchido por app.js --></div>
+
+        <p class="products-note reveal">
+          * Preços de demonstração do site fictício. Frete grátis para o bairro nas compras acima de R$ 150.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Fale com a gente</p>
+          <h2>Agende uma visita ou tire suas dúvidas</h2>
+          <p class="section-sub">
+            Responda o formulário e nossa equipe confirma o horário em até 30 minutos
+            durante o horário de funcionamento.
+          </p>
+        </header>
+
+        <div class="contact-layout">
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Seu nome *</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Ex.: Maria Souza" required />
+              <p class="error" id="error-name" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@email.com" required />
+              <p class="error" id="error-email" role="alert"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Telefone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(11) 90000-0000" />
+                <p class="error" id="error-phone" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label for="service">Serviço desejado *</label>
+                <select id="service" name="service" required>
+                  <option value="">Selecione…</option>
+                  <option>Banho &amp; Tosa</option>
+                  <option>Consulta veterinária</option>
+                  <option>Hospedagem / Creche</option>
+                  <option>Adestramento</option>
+                  <option>Compra de produtos</option>
+                </select>
+                <p class="error" id="error-service" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Mensagem *</label>
+              <textarea id="message" name="message" rows="4" placeholder="Conte pra gente sobre o seu pet: porte, raça e o que ele precisa." required></textarea>
+              <p class="error" id="error-message" role="alert"></p>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Enviar solicitação</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-info reveal" aria-label="Informações de contato">
+            <div class="info-card">
+              <h3>Onde estamos</h3>
+              <ul class="info-list" role="list">
+                <li>
+                  <span class="info-icon" aria-hidden="true">📍</span>
+                  <span>Rua das Acácias, 245 — Jardim Aurora<br />São Paulo/SP — 01234-000</span>
+                </li>
+                <li>
+                  <span class="info-icon" aria-hidden="true">📞</span>
+                  <span><a href="tel:+551134567890">(11) 3456-7890</a></span>
+                </li>
+                <li>
+                  <span class="info-icon" aria-hidden="true">💬</span>
+                  <span><a href="https://wa.me/5511990000000" target="_blank" rel="noopener">WhatsApp (11) 99000-0000</a></span>
+                </li>
+                <li>
+                  <span class="info-icon" aria-hidden="true">✉️</span>
+                  <span><a href="mailto:oi@patasecompanhia.com.br">oi@patasecompanhia.com.br</a></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <h3>Horário de funcionamento</h3>
+              <ul class="hours" role="list">
+                <li><span>Segunda a sexta</span><strong>08h — 20h</strong></li>
+                <li><span>Sábado</span><strong>08h — 18h</strong></li>
+                <li><span>Domingo</span><strong>09h — 14h</strong></li>
+                <li class="closed"><span>Feriados</span><strong>Somente emergências</strong></li>
+              </ul>
+            </div>
+
+            <div class="info-card map-card" role="img" aria-label="Mapa ilustrativo da localização da loja">
+              <span class="map-pin" aria-hidden="true">🐾</span>
+              <p>Estacionamento gratuito e área verde para passeio antes do banho.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <p>
+          <strong>Patas &amp; Companhia</strong><br />
+          Site de demonstração — empresa fictícia criada para fins de estudo.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <h3>Navegue</h3>
+        <ul role="list">
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <h3>Acompanhe</h3>
+        <ul class="social-list" role="list">
+          <li><a href="#topo" aria-label="Instagram (fictício)">Instagram</a></li>
+          <li><a href="#topo" aria-label="Facebook (fictício)">Facebook</a></li>
+          <li><a href="#topo" aria-label="TikTok (fictício)">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="anoAtual">2025</span> Patas &amp; Companhia. Todos os direitos reservados.</p>
+      <p>Feito com 🐾 e muito carinho — conteúdo demonstrativo.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
